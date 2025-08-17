@@ -14,7 +14,7 @@ public class GridBoardTest {
         int mines = 0;
         for (int i=0;i<4;i++) for (int j=0;j<4;j++) if (b.cell(i,j).isMine()) mines++;
         assertEquals(2, mines);
-        // Non-mine cells have 0..8 adjacency
+
         for (int i=0;i<4;i++) for (int j=0;j<4;j++) {
             if (!b.cell(i,j).isMine()) {
                 int a = b.cell(i,j).getAdjacent();

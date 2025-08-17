@@ -6,6 +6,6 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 public final class Coordinates {
-    final int row; // 0-based
+    final int row;
     final int col;
 }

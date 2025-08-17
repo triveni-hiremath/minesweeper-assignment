@@ -17,7 +17,7 @@ public final class MinesweeperGame {
     public void run() {
         boolean playAgain;
         do {
-            playRound();  // play one complete game
+            playRound();
             playAgain = askPlayAgain();
         } while (playAgain);
     }
