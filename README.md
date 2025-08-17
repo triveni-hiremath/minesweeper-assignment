@@ -20,7 +20,7 @@ mvn -q -DskipTests=false test
 
 ## Design
 - `GridBoard` holds immutable dimensions and a 2D array of `Unit`.
-- `GridBoard#reveal` performs BFS-based flood fill for zero-adjacent cells.
+- `GridBoard#reveal` performs BFS-based flood fill for zero-adjacent units.
 - `InputParser` validates and converts between `A1` <-> coordinates.
 - `MinesweeperUI` is responsible for I/O and formatted grid rendering.
-- `MinesweeperGame` orchestrates the loop; `Main` wires it up.
+- `MinesweeperGame` orchestrates the loop; `Main class` wires it up.
